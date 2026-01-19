@@ -1,0 +1,3 @@
+Name: Rahim, Roll: 2026005, Courses: Atificial Intelligence, Machine Learning, Modern Cryptography
+Name: Ruma, Roll: 2026005, Courses: Machine Learning, Artificial Intelligence
+Name: Rakib, Roll: 2026007, Courses: Cyber Security, Modern Cryptography, Software Testing
