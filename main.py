@@ -1,13 +1,10 @@
-# School Management System
-# OOP + File Handling + Encapsulation
-
-# ---------------- Course Class ----------------
+#Course Class
 class Course:
     def __init__(self, course_name):
         self.course_name = course_name
 
 
-# ---------------- Student Class ----------------
+#Student Class
 class Student:
     def __init__(self, name, roll, password):
         self.name = name
@@ -18,12 +15,12 @@ class Student:
     def enroll_course(self, course):
         self.enrolled_courses.append(course.course_name)
 
-    # Getter method (password access)
+    # Getter method(password access)
     def get_password(self):
         return self.__password
 
 
-# ---------------- File Handling Functions ----------------
+#File Handling Functions
 FILE_NAME = "students.txt"
 
 def save_student(student):
@@ -41,7 +38,9 @@ def show_all_students():
                 print(line.strip())
     except FileNotFoundError:
         print("No student data found!")
-# ---------------- Main Program ----------------
+
+
+#Main Program
 def main():
     while True:
         print("\n1. Enroll Student")
@@ -76,6 +75,4 @@ def main():
         else:
             print("Invalid choice!")
 
-
-# ---------------- Program Start ----------------
 main()
