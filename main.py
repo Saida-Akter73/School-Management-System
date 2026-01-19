@@ -72,7 +72,6 @@ def main():
             print("Program closed.")
             break
 
-        else:
-            print("Invalid choice!")
+
 
 main()
