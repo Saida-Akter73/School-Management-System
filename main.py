@@ -24,7 +24,7 @@ class Student:
 FILE_NAME = "students.txt"
 
 def save_student(student):
-    with open(FILE_NAME, "a") as file:   # append mode
+    with open(FILE_NAME, "a") as file:   # append
         courses = ", ".join(student.enrolled_courses)
         file.write(
             f"Name: {student.name}, Roll: {student.roll}, Courses: {courses}\n"
@@ -33,7 +33,7 @@ def save_student(student):
 def show_all_students():
     try:
         with open(FILE_NAME, "r") as file:
-            print("\n----- All Students -----")
+            print("\n All Students")
             for line in file:
                 print(line.strip())
     except FileNotFoundError:
