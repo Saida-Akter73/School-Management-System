@@ -65,13 +65,3 @@ def main():
             save_student(student)
             print("Student enrolled & saved successfully!")
 
-        elif choice == "2":
-            show_all_students()
-
-        elif choice == "3":
-            print("Program closed.")
-            break
-
-
-
-main()
